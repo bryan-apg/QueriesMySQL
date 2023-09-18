@@ -1,0 +1,34 @@
+1 Seleccionar los campos order_id, producto_id y unit_price de la tabla order_details donde el order_id sea igual a 46.
+sql
+
+SELECT order_id, product_id, unit_price
+FROM order_details
+WHERE order_id = 46;
+
+2 Seleccionar el campo Company de la tabla Customers donde el dato almacenado en ese campo finalice con la letra A.
+sql
+
+SELECT Company
+FROM Customers
+WHERE Company LIKE '%A';
+
+3 Ordenar de manera descendente los registros almacenados en la tabla Products de acuerdo al campo product_name.
+sql
+
+SELECT *
+FROM Products
+ORDER BY product_name DESC;
+
+4 Encontrar todos los apellidos (LastName) en la tabla Employees que comiencen con la letra S.
+sql
+
+SELECT LastName
+FROM Employees
+WHERE LastName LIKE 'S%';
+
+5 Liste todos los campos de la tabla orders cuya columna shipped_date sea NULL.
+sql
+
+SELECT *
+FROM orders
+WHERE shipped_date IS NULL;
